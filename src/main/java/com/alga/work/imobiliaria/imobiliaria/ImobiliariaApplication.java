@@ -5,11 +5,12 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.stereotype.Repository;
 
-@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
+
 @SpringBootApplication
-@ComponentScan({"com.alga.work.imobiliaria.imobiliaria.controller"})
+@Repository(value="com.alga.work.imobiliaria.imobiliaria")
 public class ImobiliariaApplication {
 
 	public static void main(String[] args) {
