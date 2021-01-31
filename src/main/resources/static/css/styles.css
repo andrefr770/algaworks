@@ -15,3 +15,17 @@
 	text-align:center;
 	padding:144px 0;
 }
+
+.mainForm_register{
+	background-color:#41B3A3;
+	padding:15px 15px;
+	height:450px;
+}
+
+.form-group{
+	width:250px;
+}
+
+.secondFrom_register{
+	height:385px;
+}
