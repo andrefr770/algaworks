@@ -22,8 +22,9 @@
 .mainForm_register .form-group.col-sm {
   width: 250px;
 }
-.mainForm_register .secondFrom_register {
-  height: 385px;
+
+.secondFrom_register {
+  height: 100px;
 }
 
 /*# sourceMappingURL=styles.css.map */
