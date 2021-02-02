@@ -1,0 +1,30 @@
+.bg-light{
+	background-color:black !important;
+	padding:10px 10px; 
+}
+
+.navbar-brand{
+	color:white !important;
+} 
+
+.mainDiv{
+	background-color:#41B3A3;
+	height:450px;
+	text-align:center;
+	padding:144px 0;
+} 
+
+.mainForm_register{
+	background-color:#41B3A3;
+	padding:15px 15px;
+	height:450px;
+	
+	.form-group.col-sm{
+		width:250px;
+	}
+
+	.secondFrom_register{
+		height:385px;
+	}
+}
+

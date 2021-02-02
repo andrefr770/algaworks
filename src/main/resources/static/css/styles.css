@@ -1,31 +1,29 @@
-@charset "ISO-8859-1";
-
-.bg-light{
-	background-color:black !important;
-	padding:10px 10px; 
+.bg-light {
+  background-color: black !important;
+  padding: 10px 10px;
 }
 
-.navbar-brand{
-	color:white !important;
-} 
-
-.mainDiv{
-	background-color:#41B3A3;
-	height:450px;
-	text-align:center;
-	padding:144px 0;
+.navbar-brand {
+  color: white !important;
 }
 
-.mainForm_register{
-	background-color:#41B3A3;
-	padding:15px 15px;
-	height:450px;
+.mainDiv {
+  background-color: #41B3A3;
+  height: 450px;
+  text-align: center;
+  padding: 144px 0;
 }
 
-.form-group{
-	width:250px;
+.mainForm_register {
+  background-color: #41B3A3;
+  padding: 15px 15px;
+  height: 450px;
+}
+.mainForm_register .form-group.col-sm {
+  width: 250px;
+}
+.mainForm_register .secondFrom_register {
+  height: 385px;
 }
 
-.secondFrom_register{
-	height:385px;
-}
+/*# sourceMappingURL=styles.css.map */
