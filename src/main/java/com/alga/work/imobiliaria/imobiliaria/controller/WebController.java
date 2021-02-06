@@ -19,4 +19,12 @@ public class WebController {
    public String registarCasa() {
 	   return "registarCasa";
    }
+   
+   @RequestMapping(value = "/home/register")
+   public String homeregister() {
+	   return "homeregister";
+   }
+   
+   /*@RequestMapping(value = "/deleteHome")*/
+   
 }

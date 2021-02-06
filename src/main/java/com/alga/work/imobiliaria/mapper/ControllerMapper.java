@@ -9,6 +9,7 @@ public class ControllerMapper {
 		
 		registarCasa casa = new registarCasa();
 		
+		casa.setHomeId(registarcasaDTO.getHomeId());
 		casa.setHomePlace(registarcasaDTO.getHomePlace());
 		casa.setHomeType(registarcasaDTO.getHomeType());
 		casa.setGoodFor(registarcasaDTO.getGoodFor());

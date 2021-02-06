@@ -11,8 +11,8 @@ import org.springframework.stereotype.Repository;
 
 
 @SpringBootApplication
-@Repository(value="com.alga.work.imobiliaria.imobiliaria")
-@EntityScan(basePackages = {"com.alga.work.imobiliaria.imobiliaria.model"})
+//@Repository(value="com.alga.work.imobiliaria.imobiliaria")
+@EntityScan(basePackages = {"com.alga.work.imobiliaria.imobiliaria"})
 public class ImobiliariaApplication {
 
 	public static void main(String[] args) {
