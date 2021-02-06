@@ -1,4 +1,4 @@
-package com.alga.work.imobiliaria.mapper;
+package com.alga.work.imobiliaria.imobiliaria.mapper;
 
 import com.alga.work.imobiliaria.imobiliaria.DTO.registarCasaDTO;
 import com.alga.work.imobiliaria.imobiliaria.model.registarCasa;
@@ -19,4 +19,5 @@ public class ControllerMapper {
 		
 		return casa;
 	}
+	
 }

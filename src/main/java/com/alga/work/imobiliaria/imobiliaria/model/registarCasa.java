@@ -15,18 +15,20 @@ public class registarCasa {
 	@Column(name = "homeID")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long homeId;
-	@Column(name = "homePlace")
+	@Column(name = "homePlace", nullable=false)
 	private String homePlace;
-	@Column(name = "homeType")
+	@Column(name = "homeType", nullable=false)
 	private String homeType;
-	@Column(name = "bussiness")
+	@Column(name = "bussiness", nullable=false)
 	private String bussiness;
-	@Column(name = "price")
+	@Column(name = "price", nullable=false)
 	private String price;
-	@Column(name = "goodFor")
+	@Column(name = "goodFor", nullable=false)
 	private String goodFor;
-	@Column(name = "nmrBath")
+	@Column(name = "nmrBath", nullable=false)
 	private String nmrBath;
+	@Column(name="address", nullable=false, unique=true)
+	private String address;
 	
 	public Long getHomeId() {
 		return homeId;
@@ -69,5 +71,11 @@ public class registarCasa {
 	}
 	public void setNmrBath(String nmrBath) {
 		this.nmrBath = nmrBath;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
 	}
 }

@@ -1,4 +1,4 @@
-package com.alga.work.imobiliaria.service;
+package com.alga.work.imobiliaria.imobiliaria.service;
 
 import java.util.List;
 
@@ -7,9 +7,9 @@ import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import com.alga.work.imobiliaria.imobiliaria.DTO.registarCasaDTO;
+import com.alga.work.imobiliaria.imobiliaria.mapper.ControllerMapper;
 import com.alga.work.imobiliaria.imobiliaria.model.registarCasa;
 import com.alga.work.imobiliaria.imobiliaria.repository.registarCasaRepository;
-import com.alga.work.imobiliaria.mapper.ControllerMapper;
 
 @Component
 public class registarCasaService {
@@ -19,7 +19,7 @@ public class registarCasaService {
 	
 	public registarCasa registarHome(registarCasaDTO registarcasaDTO) {
 		registarCasa casa = ControllerMapper.registarHome(registarcasaDTO);
-		return casaRepository.save(casa);
+		return casaRepository.save(casa); 
 	}
 	
 	public registarCasa apagarCasa(registarCasaDTO registarcasaDTO) {

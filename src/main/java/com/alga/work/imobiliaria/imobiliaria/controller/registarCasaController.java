@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.alga.work.imobiliaria.imobiliaria.DTO.registarCasaDTO;
 import com.alga.work.imobiliaria.imobiliaria.model.registarCasa;
-import com.alga.work.imobiliaria.service.registarCasaService;
+import com.alga.work.imobiliaria.imobiliaria.service.registarCasaService;
 
 @RestController
 @RequestMapping(value = "/home")
@@ -29,11 +29,6 @@ public class registarCasaController {
 	@PostMapping(value = "/deleteHome")
 	public registarCasa apagarCasa(@RequestBody final registarCasaDTO registarcasaDTO) {
 		return RegisterHome.apagarCasa(registarcasaDTO);
-	}
-	
-	@Bean
-	public registarCasaService registarHome() {
-		return RegisterHome;
 	}
 	
 }
