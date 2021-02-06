@@ -27,7 +27,7 @@ public class registarCasa {
 	private String goodFor;
 	@Column(name = "nmrBath", nullable=false)
 	private String nmrBath;
-	@Column(name="address", nullable=false, unique=true)
+	@Column(name="address", unique=true)
 	private String address;
 	
 	public Long getHomeId() {
