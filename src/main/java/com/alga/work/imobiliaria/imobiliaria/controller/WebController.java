@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class WebController {
+	
    @RequestMapping(value = "/index")
    public String index() {
       return "index";
@@ -18,5 +19,10 @@ public class WebController {
    @RequestMapping(value="/registarCasa")
    public String registarCasa() {
 	   return "registarCasa";
+   }
+   
+   @RequestMapping(value = "/home/register")
+   public String homeregister() {
+	   return "homeregister";
    }
 }

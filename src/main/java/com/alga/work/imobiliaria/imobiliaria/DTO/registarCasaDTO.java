@@ -14,6 +14,7 @@ public class registarCasaDTO {
 	private String price;
 	private String goodFor;
 	private String nmrBath;
+	private String address;
 	
 	public Long getHomeId() {
 		return homeId;
@@ -56,5 +57,11 @@ public class registarCasaDTO {
 	}
 	public void setNmrBath(String nmrBath) {
 		this.nmrBath = nmrBath;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
 	}
 }
