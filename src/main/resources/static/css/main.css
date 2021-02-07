@@ -19,6 +19,7 @@
   background-color: #41B3A3;
   padding: 15px 15px;
   height: 450px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
 }
 .mainForm_register .form-group.col-sm {
   width: 250px;
