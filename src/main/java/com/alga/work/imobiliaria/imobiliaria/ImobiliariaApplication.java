@@ -15,7 +15,6 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @SpringBootApplication
 @Repository(value="com.alga.work.imobiliaria.imobiliaria")
 public class ImobiliariaApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(ImobiliariaApplication.class, args);
 	}

@@ -13,7 +13,7 @@ public class registarCasa {
 
 	@Id
 	@Column(name = "homeID")
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long homeId;
 	@Column(name = "homePlace", nullable=false)
 	private String homePlace;
@@ -29,7 +29,21 @@ public class registarCasa {
 	private String nmrBath;
 	@Column(name="address", unique=true)
 	private String address;
-	
+
+	public registarCasa(){
+		
+	}
+
+	public registarCasa(String homePlace, String homeType, String bussiness, String price, String goodFor, String nmrBath, String address){ //Builder pattern used in ControllerMapper
+		this.homePlace = homePlace;
+		this.homeType = homeType;
+		this.bussiness = bussiness;
+		this.price = price;
+		this.goodFor = goodFor;
+		this.nmrBath = nmrBath;
+		this.address = address;
+	}
+
 	public Long getHomeId() {
 		return homeId;
 	}

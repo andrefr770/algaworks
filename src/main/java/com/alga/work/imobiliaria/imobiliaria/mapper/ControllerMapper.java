@@ -4,20 +4,10 @@ import com.alga.work.imobiliaria.imobiliaria.DTO.registarCasaDTO;
 import com.alga.work.imobiliaria.imobiliaria.model.registarCasa;
 
 public class ControllerMapper {
-	
+
 	public static registarCasa registarHome(registarCasaDTO registarcasaDTO) {
-		
-		registarCasa casa = new registarCasa();
-		
-		casa.setHomeId(registarcasaDTO.getHomeId());
-		casa.setHomePlace(registarcasaDTO.getHomePlace());
-		casa.setHomeType(registarcasaDTO.getHomeType());
-		casa.setGoodFor(registarcasaDTO.getGoodFor());
-		casa.setBussiness(registarcasaDTO.getBussiness());
-		casa.setNmrBath(registarcasaDTO.getNmrBath());
-		casa.setPrice(registarcasaDTO.getPrice());
-		
+		registarCasa casa = new registarCasa(registarcasaDTO.getHomePlace(), registarcasaDTO.getHomeType(), registarcasaDTO.getBussiness(), registarcasaDTO.getPrice(), registarcasaDTO.getGoodFor(), registarcasaDTO.getNmrBath(), registarcasaDTO.getAddress());
+
 		return casa;
 	}
-	
 }
